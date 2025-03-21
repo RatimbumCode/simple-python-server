@@ -84,13 +84,9 @@ A lightweight Flask-based server that responds to GET requests with a JSON paylo
      }
      ```
 
-## Configuration
-
-- **API_TOKEN**: Set this in `.env` to define the verification token. If not set, it falls back to `"default-token-fallback"`.
-- **Host/Port**: Modify the `app.run()` parameters in `app.py` if you need a different host or port (e.g., `port=8080`).
-
 ## Development Notes
 
+- **Host/Port**: Modify the `app.run()` parameters in `app.py` if you need a different host or port (e.g., `port=8080`).
 - **Debug Mode**: Enabled by default (`debug=True`). Disable it in production for security (`debug=False`).
 - **Security**: For production, use HTTPS and a strong, unique token (e.g., generated with `secrets.token_urlsafe(32)` in Python).
 
