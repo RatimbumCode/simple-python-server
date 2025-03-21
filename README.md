@@ -15,7 +15,7 @@ A lightweight Flask-based server that responds to GET requests with a JSON paylo
 1. **Clone the Repository** (if applicable):
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/RatimbumCode/simple-python-server.git
    ```
 
    ```bash

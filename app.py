@@ -7,7 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-VERIFICATION_TOKEN = os.environ.get("API_TOKEN", "default-token-fallback")
+VERIFICATION_TOKEN = os.environ.get("API_TOKEN")
+if not VERIFICATION_TOKEN:
+    raise ValueError("API_TOKEN environment variable must be set")
 
 
 @app.route("/", methods=["GET"])
